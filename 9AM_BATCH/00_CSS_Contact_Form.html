@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Contact Form</title>
+    <style>
+        .contact-div{
+            background: linear-gradient(45deg,black,teal);
+            width: 300px;
+            color: white;
+            font-family: Arial,sans-serif;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .contact-div h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        .contact-form label{
+            display: block;
+            text-transform: uppercase;
+        }
+        input[type='text'],
+        input[type='email'],
+        select{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            height: 35px;
+            width: 295px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        textarea{
+            width: 290px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        #contact-btn{
+            background: linear-gradient(45deg,teal,black);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 20px;
+            width: 290px;
+            border-radius: 5px;
+            outline: none;
+            margin: 10px 0;
+
+        }
+        #contact-btn:hover{
+            background: linear-gradient(45deg,black,teal);
+            box-shadow: 0 0 3px white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-div">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-control">
+                <label>NAME</label>
+                <input type="text">
+            </div>
+            <div class="form-control">
+                <label>EMAIL</label>
+                <input type="email">
+            </div>
+            <div class="form-control">
+                <label>Subject</label>
+                <select>
+                    <option>Select an Option</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Query</label>
+                <textarea rows="5" cols="20"></textarea>
+            </div>
+            <div class="form-control">
+                <input type="submit" value="Contact" id="contact-btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
